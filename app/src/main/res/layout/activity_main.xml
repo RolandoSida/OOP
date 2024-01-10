@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2196F3"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/constraintLayout"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Water Supply Customer List"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="85dp"
+            android:id="@+id/row2"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/title">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="arial"
+                    android:text=" Name: "
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/eName"
+                    android:layout_width="260dp"
+                    android:layout_height="47dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginBottom="5dp"
+                    android:fontFamily="monospace"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="85dp"
+            android:id="@+id/row3"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/row2">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tType"
+                    android:text=" Products: "
+                    android:textSize="20sp"
+                    android:textColor="@color/white"
+                    android:fontFamily="arial"
+                    android:layout_marginTop="20dp"
+                    android:layout_centerHorizontal="false"
+                    />
+
+                <EditText
+                    android:id="@+id/eProducts"
+                    android:layout_width="230dp"
+                    android:layout_height="47dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginBottom="5dp"
+                    android:fontFamily="monospace"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="85dp"
+            android:id="@+id/row4"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/row3">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tQuantity"
+                    android:text=" Quantity: "
+                    android:textSize="20sp"
+                    android:textColor="@color/white"
+                    android:fontFamily="arial"
+                    android:layout_marginTop="20dp"
+                    android:layout_centerHorizontal="false"
+                    />
+
+                <EditText
+                    android:id="@+id/eQuantity"
+                    android:layout_width="230dp"
+                    android:layout_height="47dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginBottom="5dp"
+                    android:fontFamily="monospace"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="85dp"
+            android:id="@+id/row5"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/row4">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tCost"
+                    android:text=" Cost: "
+                    android:textSize="20sp"
+                    android:textColor="@color/white"
+                    android:fontFamily="arial"
+                    android:layout_marginTop="20dp"
+                    android:layout_centerHorizontal="false"
+                    />
+
+                <EditText
+                    android:id="@+id/eCost"
+                    android:layout_width="270dp"
+                    android:layout_height="47dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginBottom="5dp"
+                    android:fontFamily="monospace"
+                    android:textColor="@color/white"
+                    android:inputType="number"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="85dp"
+            android:id="@+id/row6"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/row5">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tdate"
+                    android:text=" Date: "
+                    android:textSize="20sp"
+                    android:textColor="@color/white"
+                    android:fontFamily="arial"
+                    android:layout_marginTop="20dp"
+                    android:layout_centerHorizontal="false"
+                    />
+
+                <EditText
+                    android:id="@+id/edate"
+                    android:layout_width="270dp"
+                    android:layout_height="47dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginBottom="5dp"
+                    android:fontFamily="monospace"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:inputType="date"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="85dp"
+            android:id="@+id/row7"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/row6">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tTotal"
+                    android:text=" Total: "
+                    android:textSize="20sp"
+                    android:textColor="@color/white"
+                    android:fontFamily="arial"
+                    android:layout_marginTop="20dp"
+                    android:layout_centerHorizontal="false"
+                    />
+
+                <TextView
+                    android:id="@+id/eTotal"
+                    android:layout_width="270dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginBottom="5dp"
+                    android:fontFamily="monospace"
+                    android:textColor="#FB4141"
+                    android:textSize="23sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="85dp"
+            android:id="@+id/row8"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/row7">
+
+            <TextView
+                android:id="@+id/btnTotal"
+                android:layout_width="130dp"
+                android:layout_height="47dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="0dp"
+                android:textAlignment="center"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/aclonica"
+                android:background="@drawable/editbtn"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:text="Total"/>
+
+            <TextView
+                android:id="@+id/btnSaved"
+                android:layout_width="140dp"
+                android:layout_height="47dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="0dp"
+                android:textAlignment="center"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/aclonica"
+                android:background="@drawable/editbtn"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:text="Purchase"/>
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

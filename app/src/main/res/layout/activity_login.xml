@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2196F3"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:paddingVertical="35dp"
+        android:text="Water Supply "
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="45sp" />
+
+
+    <ImageView
+        android:layout_marginStart="73dp"
+        android:layout_width="238dp"
+        android:layout_height="128dp"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/photo"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/Euser"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/edittext"
+        android:hint="Username"
+        android:fontFamily="serif"
+        android:textSize="20dp"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
+
+    <EditText
+        android:id="@+id/Epass"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginBottom="50dp"
+        android:fontFamily="serif"
+        android:background="@drawable/edittext"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:ems="10"
+        android:hint="Password"
+        android:hyphenationFrequency="none"
+        android:inputType="textPassword"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="       "
+        android:textSize="50dp"
+        android:textAlignment="center"
+        />
+
+    <TextView
+        android:id="@+id/Tlogin"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_marginHorizontal="130dp"
+        android:textAlignment="center"
+        android:textSize="27sp"
+        android:fontFamily="@font/poppins_semibold"
+        android:background="@drawable/editbtn"
+        android:text="LOGIN"
+        android:textColor="#F6FAF7"/>
+
+
+</LinearLayout>
